@@ -19,7 +19,7 @@ public class Pool {
         System.out.println("Введіть ім'я другого гравця(0): ");
         String kor2 = sc.nextLine();
         LocalDateTime now = LocalDateTime.now();
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(name))){
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(name, true))){
             char[][] mass = new char[4][4];
             for (int i = 0; i < mass.length; i++) {
                 for (int j = 0; j < mass[i].length; j++) {
