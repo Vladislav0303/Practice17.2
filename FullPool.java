@@ -18,7 +18,7 @@ public class FullPool {
         System.out.println("Введіть ім'я другого гравця(0): ");
         String kor2 = sc.nextLine();
         LocalDateTime now = LocalDateTime.now();
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(name))){
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(name, true))){
             Scanner scanner1 = new Scanner(System.in);
             System.out.println("Оберіть розмір(3x3, 5x5, 7x7, 9x9)");
             size = scanner1.nextInt();
