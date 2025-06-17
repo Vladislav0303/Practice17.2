@@ -27,14 +27,15 @@ public class Menu {
         int a = sc.nextInt();
         if (a == 1) {
             System.out.println("Ви обрали: " + play);
-            Pool.Poole();
+            Pool.Pool();
         } else if (a == 2) {
             System.out.println("Ви обрали: " + settings);
             FullPool.Pool();
         } else if (a == 3) {
+            Scanner sc1 = new Scanner(System.in);
             System.out.println("Ви обрали: " + perevirka);
             System.out.println("Введіть назву файла який хочете перевірити: ");
-            String s = sc.nextLine();
+            String s = sc1.nextLine();
             reader(s);
         } else if (a == 4) {
             System.out.println("Ви обрали :" + exit);

@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class FullPool {
     public int size;
     public Scanner sc = new Scanner(System.in);
+    public char[][] mass;
 
     public FullPool() {
         System.out.println("Введіть куди записувати налаштування: ");
@@ -22,7 +23,7 @@ public class FullPool {
             Scanner scanner1 = new Scanner(System.in);
             System.out.println("Оберіть розмір(3x3, 5x5, 7x7, 9x9)");
             size = scanner1.nextInt();
-            char[][] mass = new char[size + 1][size + 1];
+            mass = new char[size + 1][size + 1];
             for (int i = 0; i < mass.length; i++) {
                 for (int j = 0; j < mass[i].length; j++) {
                     mass[i][j] = ' ';
