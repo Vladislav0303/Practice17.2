@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Pool {
     public char[][] mass;
+    
     public Pool() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введіть куди записувати налаштування: ");
